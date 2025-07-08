@@ -30,7 +30,7 @@ public class BookStore {
         Book book = inventory.stream().filter(b -> b.getIsbn().equals(isbn)).findFirst()
                 .orElseThrow(() -> new IllegalArgumentException("Book not found."));
         inventory.remove(book);
-        System.out.println("Removed book: " + book.getTitle());
+        System.out.println("Removed book named: " + book.getTitle());
         return book;
     }
 
