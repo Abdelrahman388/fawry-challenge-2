@@ -17,7 +17,7 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
 
-## Second Fawry task : online Book store
+# Second Fawry task : online Book store
 
-# ScreenShot of terminal after running the project
+## ScreenShot of terminal after running the project
 ![Screen shot of terminal after running the project](https://github.com/Abdelrahman388/fawry-challenge-2/blob/main/screenshot.png)
