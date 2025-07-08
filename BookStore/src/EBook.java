@@ -31,14 +31,14 @@ public class EBook extends Book {
             throw new IllegalArgumentException("Address cannot be null or empty.");
         }
 
-        sendToEmail(email);
+        sendToEmail(email, quantity);
         System.out.println("Purchased " + quantity + " copies of " + getTitle() + " to be sent to "
                 + email );
     }
         
-    private void sendToEmail(String email) {
+    private void sendToEmail(String email, int quantity) {
         MailingService mailingService = new MailingService(email);
-        mailingService.send();
+        mailingService.send(this, quantity);
     }
 
 }

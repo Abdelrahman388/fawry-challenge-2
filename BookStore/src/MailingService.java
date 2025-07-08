@@ -5,8 +5,8 @@ public class MailingService {
         this.email = email;
     }
 
-    public void send() {
-        System.out.println("Sending e-book to email :" + email);
+    public void send(EBook book,int quantity) {
+        System.out.println("Sending " + quantity + " copies of " + book.getTitle() + " to email :" + email);
     }
 
 }
