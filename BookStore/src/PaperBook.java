@@ -35,9 +35,10 @@ public class PaperBook extends Book {
         }
 
         stock -= quantity;
-        shipToAddress(address, quantity);
         System.out.println("Purchased " + quantity + " copies of " + getTitle() + " to be shipped to "
         + address);
+        shipToAddress(address, quantity);
+        
     }
     
     private void shipToAddress(String address, int quantity) {

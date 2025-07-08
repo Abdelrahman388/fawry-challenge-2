@@ -31,9 +31,10 @@ public class EBook extends Book {
             throw new IllegalArgumentException("Address cannot be null or empty.");
         }
 
-        sendToEmail(email, quantity);
         System.out.println("Purchased " + quantity + " copies of " + getTitle() + " to be sent to "
                 + email );
+        sendToEmail(email, quantity);
+
     }
         
     private void sendToEmail(String email, int quantity) {
