@@ -2,14 +2,14 @@ import java.util.List;
 
 public class Test {
     public static void run() {
-        System.out.println("=== Running BookStore Tests ===\n");
+        System.out.println("==== Running BookStore Tests ====\n");
 
         testAddingBooks();
         testBuyingBooks();
         testRemovingBooks();
         testRemovingOutdatedBooks();
 
-        System.out.println("\n=== All Tests Completed ===");
+        System.out.println("\n==== All Tests Completed ====");
     }
 
     private static void testAddingBooks() {
